@@ -1,0 +1,595 @@
+:root{
+    --yellow:#f4e00a;
+} 
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background:var(--yellow);
+    color:#c51b92;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width:1.4rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:#222;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--yellow);
+}
+
+body{
+    background:#111;
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+
+section{
+    min-height: 100vh;
+    padding:1rem;
+}
+
+.btn{
+    padding:.7rem 15rem;
+    background:#333;
+    color:#fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+.btn i{
+    padding:0 .5rem;
+    font-size: 1.8rem;
+}
+
+.btn:hover{
+    background:var(--yellow);
+}
+
+.heading{
+    text-align: center;
+    margin:0 6rem;
+    font-size: 4rem;
+    padding:1rem;
+    border-bottom: .1rem solid rgba(255, 255, 255, 0.605);
+    color:#fff;
+}
+
+.heading span{
+    color:var(--yellow);
+}
+
+header{
+    position: fixed;
+    top:0; left:0;
+    z-index: 1000;
+    height:100%;
+    width:35rem;
+    background: #010101;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .user img{
+    height:17rem;
+    width:17rem;
+    border-radius: 60%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    /* background: url("IMG20230929090848.jpg"); */
+    border:.7rem solid var(--yellow);
+}
+
+header .user .name{
+    font-size: 3.5rem;
+    color:#b8f414;
+}
+
+header .user .post{
+    font-size: 2rem;
+    color:#19b0e3;
+}
+
+header .navbar{
+    width:100%;
+}
+
+header .navbar ul{
+    list-style: none;
+    padding:1rem 13rem;
+}
+
+
+header .navbar ul li a{
+    display: block;
+    padding:rem;
+    margin:2.5rem 0;
+    background:#f509094b;
+    color:#fff;
+    font-size: 2rem;
+    border-radius: 10rem;
+    text-decoration: none;
+}
+
+header .navbar ul li a:hover{
+    background:var(--yellow);
+}
+
+#menu{
+    position: fixed;
+    top:2rem; right:2rem;
+    background:#ede1e1ca;
+
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding:1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding:0 15rem;
+}
+
+.home h3{
+    font-size: 2.5rem;
+    color:#fff;
+}
+
+.home h1{
+    font-size:5rem;
+    color:#fff;
+}
+
+.home h1 span{
+    color:var(--yellow);
+}
+
+.home p{
+    font-size:2rem;
+    color:#eee;
+    padding: 1rem 0;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:1rem 0;
+}
+
+.about .row .info{
+    flex:1 1 48rem;
+    padding:2rem 1rem;
+    padding-left: 6rem;
+}
+
+.about .row .info h3{
+    font-size: 2rem;
+    color:var(--yellow);
+    padding:1rem 0;
+    font-weight: normal;
+}
+
+.about .row .info h3 span{
+    color:#eee;
+    padding:0 .5rem;
+}
+
+.about .row .counter{
+    flex:1 1 48rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* margin-top: rem; */
+}
+
+.about .row .counter .box{
+    width:20rem;
+    background:#222;
+    text-align: center;
+    padding: 2rem;
+    margin:2rem;
+    margin-top: 30px;
+}
+
+.about .row .counter .box span{
+    font-size: 4rem;
+    color:var(--yellow);
+   
+}
+
+.about .row .counter .box h3{
+    font-size: 2rem;
+    color:#fff;
+}
+
+.education .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:1rem 0;
+    padding-left: 3rem;
+}
+
+.education .box-container .box{
+    width:27rem;
+    margin:4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid #fff;
+    position: relative;
+}
+
+.education .box-container .box span{
+    font-size: 1.3rem;
+    background:#222;
+    color:#fff;
+    border-radius: 5rem;
+    padding:.5rem 2.5rem;
+}
+
+.education .box-container .box h3{
+    font-size: 2rem;
+    color:#fff;
+    padding-top: 1.5rem;
+}
+
+.education .box-container .box p{
+    font-size: 1.4rem;
+    color:#eee;
+    padding: 1rem 0;
+}
+
+.education .box-container .box i{
+    position: absolute;
+    top:-1.5rem; left:-2.5rem;
+    height:5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color:#fff;
+    background:var(--yellow);
+}
+
+.certificates .box-container{
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+}
+
+.certificates .heading{
+    text-align: center;
+    align-items: center;
+}
+.certificates .box-container .box{
+    height: 35rem;
+    width:60rem;
+    border-radius: 2rem;
+    margin:2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.certificates .box-container .box img{
+    height:100%;
+    width:100%;
+    /* object-fit: cover; */
+
+}
+
+.certificates .box-container .box:hover img{
+    transform: scale(1.2);
+}
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* ===== SKILLS =====*/
+.skills__container {
+    row-gap: 20rem;
+    text-align: center;
+  }
+  
+  .skills__subtitle {
+    margin-bottom: var(--mb-2);
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 3rem;
+    margin: 2em;
+    
+  }
+  
+  .skills__text {
+    margin-bottom: var(--mb-4);
+    color: white;
+    background-color: rgb(7, 7, 7);
+    font-size: 2rem;
+    margin: 2em;
+  }
+  
+  .skills__data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-size: 2rem;
+    color: black;
+    font-weight: var(--font-semi);
+    padding: 2rem 3rem;
+    margin-bottom: var(--mb-4);
+    border-radius: .5rem;
+    background-color: white;
+    box-shadow: 0px 4px 25px rgb(202, 193, 17);
+  }
+  
+  .skills__icon {
+    font-size: 2rem;
+    margin-right: var(--mb-2);
+    color: var(--first-color);
+  }
+  
+  .skills__names {
+    display: flex;
+    align-items: center;
+  }
+  
+  .skills__bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color:rgba(12, 84, 166, 0.586);
+    /* background-color: var(--first-color); */
+    height: .5rem;
+    border-radius: 1rem;
+    z-index: var(--z-back);
+  }
+  
+  .skills__c {
+    width: 85%;
+  }
+  .skills__Cpp {
+    width: 85%;
+  }
+  .skills__html {
+    width: 75%;
+  }
+  
+  .skills__css {
+    width: 60%;
+  }
+  
+  .skills__js {
+    width: 60%;
+  }
+  
+  .skills__java{
+    width: 85%;
+  }
+
+.contact .row .content{
+    flex:1 1 30rem;
+    padding:4rem;
+    padding-bottom: 0;
+}
+
+.contact .row form{
+    flex:1 1 45rem;
+    padding:2rem;
+    margin:2rem;
+    margin-bottom: 4rem;
+}
+
+.contact .row form .box{
+    padding:1.5rem;
+    margin:1rem 0;
+    background:#3333;
+    color:#fff;
+    text-transform: none;
+    font-size: 1.7rem;
+    width:100%;
+}
+
+.contact .row form .box::placeholder{
+    text-transform: capitalize;
+}
+
+.contact .row form .message{
+    height: 15rem;
+    resize: none;
+}
+
+.contact .row .content .title{
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.contact .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color:#eee;
+    padding:1rem 0;
+    font-weight: normal;
+}
+
+.contact .row .content .info h3 i{
+    padding-right: 1rem;
+    color:var(--yellow);
+}
+
+.top{
+    position: fixed;
+    bottom:7.5rem; right: 2rem;
+    z-index: 100;
+    display: none;
+}
+@media (max-width:1200px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .home{
+        padding:1rem 4rem;
+    }
+
+}
+
+@media (max-width:991px){
+
+   header{
+       left:-120%;
+   }
+
+   #menu{
+       display: block;
+   }
+
+   header.toggle{
+    left:0%;
+   }
+
+   body{
+       padding:0;
+   }
+
+}
+
+@media (max-width:768px){
+
+    html{
+        font-size: 50%;
+    }
+ 
+ }
+
+@media (max-width:400px){
+
+    header{
+        width: 100vw;
+    }
+
+    .heading{
+        margin:0 3rem;
+    }
+
+    .about .row .counter .box{
+        width: 100%;
+    }
+ 
+    .education .box-container .box{
+        width:100%;
+    }
+
+    .portfolio .box-container .box{
+        width:100%;
+    }
+
+    .contact .row form{
+        margin:3rem 0;
+    }
+
+ }
+ 
+    /* .logo {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+            border-radius: 20px;
+          }
+          
+          ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+          }
+          
+          i {
+            display: inline-block;
+            margin: 0 10px;
+          }
+          
+          a {
+            display: block;
+            width: 28px;
+            height: 30px;
+            border-radius: 30%;
+            background-color: #333;
+
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+            transition: all 0.3s ease;
+          }
+          
+          a:hover {
+            background-color: #666;
+          }
+          
+          /* .fa-facebook-f:before {
+            content: "\f09a";
+            background-color: #1039ee;
+            /*
+            column-gap: 0ch;
+            */
+           
+            /* font-size:large;
+            align-items: center; 
+          } /*
+           */
+         /*
+         .fa-whatsapp:before {
+            content: "\f099";
+            background-color: #12f03f;
+          }*/
+          
+          
+          /* .fa-instagram:before {
+            content: "\f16d";
+            background-color: #ff17c1;
+            color: aqua;
+            font-size: medium;
+          }
+          
+          .fa-linkedin-in:before {
+            content: "\f0e1";
+            background-color: #20088c;
+            font-size: medium;
+          } */
